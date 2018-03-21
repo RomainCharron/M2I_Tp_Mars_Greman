@@ -71,7 +71,7 @@ public class Menu {
                         break;
                     case 4:
                         // Deviner un nombre
-                        DevinerNombre.run();
+                        DevinerNombre.menu(1);
                         break;
                     case 5:
                         // Mais des Si
@@ -103,7 +103,7 @@ public class Menu {
         } while (isDoContinu);
     }
     
-    private static void bannierre(String msg)
+    public static void bannierre(String msg)
     {
         String caract ="";
         for(int i=0;i<msg.length();i++)
