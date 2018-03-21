@@ -10,7 +10,7 @@ package com.m2i.form.greman_tp_mars.Exercice03;
  * @author Formation
  */
 public class Sapins {
-    static void menu() {
+    public static void menu() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

@@ -11,7 +11,7 @@ package com.m2i.form.greman_tp_mars.Exercice02;
  */
 public class Moyenne {
 
-    static void run() {
+    public static void run() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
