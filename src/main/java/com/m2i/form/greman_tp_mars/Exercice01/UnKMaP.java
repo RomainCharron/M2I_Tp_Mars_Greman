@@ -13,10 +13,9 @@ public class UnKMaP {
     
     public static void run(int nbKM)
     {
-        int indKM = 0;
         
         for (int i = 0; i < nbKM; i++) {
-            System.out.println("kilomètre" + (i != 0 ? "s " : " ") + "à pied, ça use , ça use,"
+            System.out.println(i + 1 + " kilomètre" + (i != 0 ? "s " : " ") + "à pied, ça use , ça use,"
             + "kilomètre" + (i != 0 ? "s " : " ") + "à pied, ça use les souliers");
         }
     }

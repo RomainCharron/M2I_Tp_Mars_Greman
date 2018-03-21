@@ -49,7 +49,7 @@ public class KeyScan {
         
     }
     
-    public static int IntRead(String msg) throws ExitException
+    public static int intRead(String msg) throws ExitException
     {
         boolean ifError;
         int champI = -5;
@@ -66,6 +66,29 @@ public class KeyScan {
                 }
                 catch (NumberFormatException e) {
                     System.out.println("Veiller saisir un nombre !");
+                    ifError = true;
+                }
+                finally
+                {
+                    
+                }
+            } while (ifError);
+        return champI;
+    }
+    public static float floatRead(String msg) throws ExitException
+    {
+        boolean ifError;
+        float champI = -5;
+        
+        do {
+                ifError = false;
+                try {
+                    System.out.print(msg + " :");
+                    champI = Float();
+                    
+                }
+                catch (NumberFormatException e) {
+                    System.out.println("Veiller saisir un nombre real !");
                     ifError = true;
                 }
                 finally

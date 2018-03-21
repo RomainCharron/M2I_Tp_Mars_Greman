@@ -5,6 +5,11 @@
  */
 package com.m2i.form.greman_tp_mars.Exercice02;
 
+import com.m2i.form.greman_tp_mars.ExitException;
+import com.m2i.form.greman_tp_mars.KeyScan;
+import java.awt.RenderingHints;
+import java.util.ArrayList;
+
 /**
  *
  * @author Formation
@@ -12,7 +17,41 @@ package com.m2i.form.greman_tp_mars.Exercice02;
 public class Moyenne {
 
     public static void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        
+        //ArrayList<Float> listFloat = new ArrayList<Float>();
+        int nbNB;
+        float sommeNb = 0,fkey;
+        
+        try {
+            nbNB = KeyScan.intRead("Nombre de valeur");
+            
+            for (int i = 0; i < nbNB; i++) {
+                fkey = KeyScan.floatRead("Veiller saisir le nombre real(" + (i + 1) + ") ");
+                //listFloat.add(fkey);
+                sommeNb += fkey;
+            }
+            
+            System.out.println();
+            System.out.println("La somme est de " + sommeNb );
+            System.out.println("La moyene est de " + (sommeNb / nbNB));
+            System.out.println();
+            
+            
+        } catch (ExitException e) {
+            System.out.println("Interuption du programe des Moyenne par l'utilisateur");
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println();
+            System.err.println("Erreur inconue");
+            System.err.println(e.getMessage());
+            e.printStackTrace();
+            
+        }
+        
+        
+        
+        
     }
     
     

@@ -35,7 +35,9 @@ public class Menu {
             System.out.println(" ---------------------------------");
             System.out.println(" 1. Les kilométres à pied");
             System.out.println(" 2. Program Moyenne");
-            System.out.println(" 3. Generation des Equipe");
+            System.out.println(" 3. Generation de Sapins");
+            System.out.println(" 4. Deviner un nombre");
+            System.out.println(" 5. Mais des Si");
             System.out.println(" q. Quitter ");
             System.out.print("\n Menu:");
             scRead = sc.next();
@@ -82,6 +84,8 @@ public class Menu {
 
                 }
 
+            } catch (UnsupportedOperationException e) {
+                System.out.println("Erreur Fonction incompléte");
             } catch (MenuExeption e) {
                 System.err.println("Chois invalide \n" + scRead);
                 System.out.println();
